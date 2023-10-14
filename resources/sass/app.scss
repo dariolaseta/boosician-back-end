@@ -1,0 +1,106 @@
+// Variables
+@use './_variables.scss';
+
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+body{
+    color: variables.$textColor;
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    nav.headerNav{
+        background-color: variables.$primaryColor;
+        height: 10%;
+    
+        button.logInBtn{
+            background-color: variables.$secondaryColor;
+            margin-right: 1rem;
+            
+            a{
+                color: variables.$primaryColor;
+                font-weight: bold;
+            }
+        }
+    
+        button.signInBtn{
+            background-color: variables.$accentColor;
+    
+            a{
+                color: variables.$secondaryColor;
+                font-weight: bold;
+            }
+        }
+    
+        a{
+            color: variables.$textColor;
+        }
+    }
+}
+
+div.container.cardContainer{
+    height: 72vh;
+}
+
+div.logInCard{
+    div.logInCardHeader{
+        background-color: variables.$accentColor;
+        color: variables.$secondaryColor;
+    }
+    
+    div.logInCardBody{
+        background-color: variables.$primaryColor;
+    }
+
+    button.logInBtn{
+        background-color: variables.$secondaryColor;
+        margin-right: 1rem;
+        color: variables.$primaryColor;
+        font-weight: bold;
+    }
+}
+
+div.signInCard{
+    div.signInCardHeader{
+        background-color: variables.$accentColor;
+        color: variables.$secondaryColor;
+    }
+    
+    div.signInCardBody{
+        background-color: variables.$primaryColor;
+    }
+
+    button.signInBtn{
+        background-color: variables.$secondaryColor;
+        margin-right: 1rem;
+        color: variables.$primaryColor;
+        font-weight: bold;
+    }
+}
+
+footer{
+    height: 18vh;
+    background-color: variables.$primaryColor;
+
+    a.logo{
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: variables.$textColor;
+
+        span.specialText{
+            color: variables.$secondaryColor;
+        }
+    }
+
+    p.credits{
+        font-size: .6rem;
+    }
+}
